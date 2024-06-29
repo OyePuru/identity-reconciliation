@@ -9,8 +9,8 @@ const ormconfig: DataSourceOptions = {
   username: process.env.MYSQL_USER_NAME,
   password: process.env.MYSQL_USER_PASSWORD,
   database: "identity-reconciliation",
-  entities: ["src/**/entities/*.entity{.ts,.js}"],
-  migrations: ["src/database/migrations/*.ts"],
+  entities: ["dist/**/entities/*.entity{.ts,.js}"],
+  migrations: ["dist/database/migrations/*.ts"],
   synchronize: false
 };
 
